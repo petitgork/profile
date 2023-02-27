@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: papyrus;
+  font-size: large;
+  line-height: 30px;
+}
+
+h1, h2, h3 {
+  font-family: 'Noto Sans', sans-serif;
+  color: #227C70;
+}
+
+a {
+  text-decoration: none;
+  color: #1C315E;
+}
+a:hover {
+  font-size: xx-large;
+  color: indigo;
+}
+
+.container {
+  margin: 2% auto;
+  width: 50%;
+  text-align: center;
+}
+
+.card {
+  margin-bottom: 1em;
+  padding: 1em;
+  background-color: #E6E2C3;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.img-round {
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+}
+
+.img-round:hover {
+  box-shadow: 0px 0px 200px gold;
+}
+
+.list-inline > li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.list-inline {
+  list-style: none;
+  padding-left: 0px;
+}
+
+i {
+  color: #227C70;
+  font-size: 3em;
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 50%;
+  }
+  .img-round {
+    height: 180px;
+    width: 180px;
+    object-fit: cover;
+  }
+  i {
+    font-size: 2.5em;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 75%;
+  }
+  .img-round {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+  }
+  i {
+    font-size: 2em;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 90%;
+  }
+  .img-round {
+    height: 130px;
+    width: 130px;
+    object-fit: cover;
+  }
+  i {
+    font-size: 1.5em;
+  }
+}
